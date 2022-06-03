@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A258DE25-6F6A-4401-AE43-D0E20451B81B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FinalProject.My.MyApplication</StartupObject>
+    <RootNamespace>FinalProject</RootNamespace>
+    <AssemblyName>FinalProject</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FinalProject.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FinalProject.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Graphicloads-Colorful-Long-Shadow-Book.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.Designer.vb">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBook.Designer.vb">
+      <DependentUpon>AddBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.Designer.vb">
+      <DependentUpon>AddUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibraryFunction.vb" />
+    <Compile Include="ModuleConnection.vb" />
+    <Compile Include="UserDetail.Designer.vb">
+      <DependentUpon>UserDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListBook.Designer.vb">
+      <DependentUpon>ListBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.vb">
+      <DependentUpon>Loading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RentBook.Designer.vb">
+      <DependentUpon>RentBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RentBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatusBook.Designer.vb">
+      <DependentUpon>StatusBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StatusBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user\ReturnBook.Designer.vb">
+      <DependentUpon>ReturnBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user\ReturnBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user\UserForm.Designer.vb">
+      <DependentUpon>UserForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user\UserForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user\UserProfile.Designer.vb">
+      <DependentUpon>UserProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="user\UserProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddBook.resx">
+      <DependentUpon>AddBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDetail.resx">
+      <DependentUpon>UserDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBook.resx">
+      <DependentUpon>ListBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentBook.resx">
+      <DependentUpon>RentBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatusBook.resx">
+      <DependentUpon>StatusBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user\ReturnBook.resx">
+      <DependentUpon>ReturnBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user\UserForm.resx">
+      <DependentUpon>UserForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user\UserProfile.resx">
+      <DependentUpon>UserProfile.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Close-2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons8-Windows-8-Programming-Minimize-Window.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_thewindow_theapplication_2872.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IconFinalProj\iconfinder_view_103796.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Graphicloads-Colorful-Long-Shadow-Book.ico" />
+    <None Include="Resources\question-mark.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\bookshelf.png" />
+    <None Include="Resources\books.png" />
+    <None Include="Resources\open-book2.png" />
+    <None Include="Resources\open-book1.png" />
+    <None Include="Resources\photo-album.png" />
+    <None Include="Resources\open-book.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
